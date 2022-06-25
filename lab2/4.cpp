@@ -7,7 +7,8 @@ int& replaceLarger(int& temp1, int& temp2) {
 }
 
 int main() {
-	/*Write a function that passes two temperatures by reference and sets the larger of the two numbers to a value entered by user by using return by reference.*/
+	/*Write a function that passes two temperatures by reference and sets the larger of the two numbers to a value entered by user by using
+	 * return by reference.*/
 
 	int temp1{}, temp2{} , newTemp{};
 	cout << "Enter temp1: ";
