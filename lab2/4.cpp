@@ -3,7 +3,7 @@
 using std::cout;
 
 int& replaceLarger(int& temp1, int& temp2) {
-return (temp1>temp2?temp1:temp2);
+	return (temp1>temp2?temp1:temp2);
 }
 
 int main() {
