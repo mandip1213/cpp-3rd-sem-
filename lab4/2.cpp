@@ -32,8 +32,6 @@ class Phrase {
 		void display()const {
 			cout << mtext << endl;
 		}
-
-
 };
 /*Write a program that has a class with a dynamically allocated character array as its data member. One object should contain "Engineers
  * are" and another should contain " Creatures of logic". Member function join() should concatenate two strings by passing two objects as
