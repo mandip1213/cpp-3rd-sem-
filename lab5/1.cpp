@@ -14,37 +14,37 @@ class Coordinates {
 		double my;
 	public:
 		Coordinates(double x = 0, double y = 0) :mx{ x }, my{ y }{}
-		friend Coordinates Function::add(const Coordinates a, const Coordinates b);
-		friend Coordinates difference(const Coordinates a, const Coordinates b);
-		friend Coordinates product(const Coordinates a, const Coordinates b);
-		friend Coordinates divide(const Coordinates a, const Coordinates b);
+		friend Coordinates Function::add(const Coordinates& a, const Coordinates& b);
+		friend Coordinates difference(const Coordinates& a, const Coordinates& b);
+		friend Coordinates product(const Coordinates& a, const Coordinates& b);
+		friend Coordinates divide(const Coordinates& a, const Coordinates& b);
 		friend class Utils;
 
 
 };
 class Utils {
 	public:
-		static	double distance(const Coordinates a, const Coordinates b) {
+		static	double distance(const Coordinates& a, const Coordinates& b) {
 			return sqrt(pow(a.mx - b.mx, 2) + pow(a.my - b.my, 2));
 		}
-		static Coordinates midpoint(const Coordinates a, const Coordinates b) {
+		static Coordinates midpoint(const Coordinates& a, const Coordinates& b) {
 			return Coordinates{ (a.mx + b.mx) / 2, (a.my + b.my) / 2 };
 		}
-		static	void display(const Coordinates a) {
+		static	void display(const Coordinates& a) {
 			cout << "(" << a.mx << " , " << a.my << ")" << endl;
 		}
 };
 
-Coordinates difference(const Coordinates a, const Coordinates b) {
+Coordinates difference(const Coordinates& a, const Coordinates& b) {
 	return Coordinates{ a.mx - b.mx,a.my - b.my };
 }
-Coordinates product(const Coordinates a, const Coordinates b) {
+Coordinates product(const Coordinates& a, const Coordinates& b) {
 	return Coordinates{ a.mx * b.mx,a.my * b.my };
 }
-Coordinates divide(const Coordinates a, const Coordinates b) {
+Coordinates divide(const Coordinates& a, const Coordinates& b) {
 	return Coordinates{ a.mx / b.mx,a.my / b.my };
 }
-Coordinates Function::add(const Coordinates a, const Coordinates b) {
+Coordinates Function::add(const Coordinates& a, const Coordinates& b) {
 	return Coordinates{ a.mx + b.mx,a.my + b.my };
 };
 /*
