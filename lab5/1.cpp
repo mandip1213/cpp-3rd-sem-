@@ -5,7 +5,7 @@ using std::cout;
 class Coordinates;
 class Function {
 	public:
-		static	Coordinates add(const Coordinates a, const Coordinates b);
+		static	Coordinates add(const Coordinates& a, const Coordinates& b);
 
 };
 class Coordinates {
