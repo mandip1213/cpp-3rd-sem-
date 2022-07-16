@@ -1,7 +1,7 @@
 #include<iostream>
 #define endl '\n'
 using std::cout;
-#define MTRTOFEETRATIO 3.28084;
+#define MTRTOFEETRATIO 3.28084
 
 /*
    Write two classes to store distances in meter-centimeter and feet-inch systems respectively. Write conversions functions so that the program can convert
