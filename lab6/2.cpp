@@ -25,7 +25,7 @@ class SI {
 		int mcentimeter;
 	public:
 		SI(int m, int cm) :mmeter{ m }, mcentimeter{ cm }{};
-		SI(float dis) :mmeter{ static_cast<int>(dis) }, mcentimeter{ static_cast<int>((dis - mmeter) * 12) } {}
+		SI(float dis) :mmeter{ static_cast<int>(dis) }, mcentimeter{ static_cast<int>((dis - mmeter) * 100) } {}
 		explicit operator ImperialSystem() const;
 		friend std::ostream& operator <<(std::ostream& out, const SI& dis);
 };
