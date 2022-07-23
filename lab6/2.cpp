@@ -1,7 +1,7 @@
 #include<iostream>
 #define endl '\n'
 using std::cout;
-#define MTRTOFEETRATIO 3.28084;
+#define MTRTOFEETRATIO 3.28084
 
 /*
    Write two classes to store distances in meter-centimeter and feet-inch systems respectively. Write conversions functions so that the program can convert
@@ -25,7 +25,7 @@ class SI {
 		int mcentimeter;
 	public:
 		SI(int m, int cm) :mmeter{ m }, mcentimeter{ cm }{};
-		SI(float dis) :mmeter{ static_cast<int>(dis) }, mcentimeter{ static_cast<int>((dis - mmeter) * 12) } {}
+		SI(float dis) :mmeter{ static_cast<int>(dis) }, mcentimeter{ static_cast<int>((dis - mmeter) * 100) } {}
 		explicit operator ImperialSystem() const;
 		friend std::ostream& operator <<(std::ostream& out, const SI& dis);
 };
