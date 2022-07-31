@@ -31,7 +31,7 @@ public:
 	void displayDetails() {
 		cout << "Name " << mname << endl;
 		cout << "Age " << mage << endl;
-		cout << "Name " << msalary << endl;
+		cout << "Salary " << msalary << endl;
 		cout << "class " << mclass << endl;
 	}
 };
